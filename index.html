@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoteCrypt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="css/output-cf45832a3e.min.css">
+  <script
+    src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.js"
+    integrity="sha384-57VRFGvLpSky5EqUImBJSOkJI+6xYMONZqn8Zh70E+1DyMPpN1vQkaJaN4YqRmln"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script defer src="main-16ac46dea4.js"></script>
+</head>
+<body class="text-black bg-stone-300">
+  <div class="max-w-[650px] mx-auto px-3 pb-20">
+    <div class="text-center text-lg font-extrabold mb-4">NoteCrypt</div>
+    <textarea
+      id="text"
+      rows="1"
+      class="py-1 border-b border-stone-400 focus:border-stone-600 w-full outline-none
+        placeholder:text-stone-500 resize-none overflow-hidden"
+      placeholder="Text"
+    ></textarea>
+    <div class="flex mt-4 mb-4">
+      <div class="relative w-full">
+        <input
+          type="password"
+          id="password"
+          class="w-full py-1 pr-8 border-b border-stone-400 focus:border-stone-600
+            outline-none placeholder:text-stone-500"
+          placeholder="Password"
+        >
+        <button id="toggle-password" class="absolute right-1 bottom-1 p-1 hover:invert-50">
+          <img src="img/visibility_off.svg" alt="">
+        </button>
+      </div>
+      <input
+        type="number"
+        id="iterations"
+        min="100000"
+        max="1000000"
+        value="550000"
+        step="5000"
+        class="py-1 w-[85px] border-b border-stone-400 focus:border-stone-600
+          placeholder:text-stone-500 outline-none"
+        placeholder="Iterations"
+        title="Iterations"
+      >
+    </div>
+    <div class="flex gap-1 h-8 font-semibold">
+      <button
+        id="encrypt"
+        class="flex items-center justify-center gap-1 w-full border border-stone-400
+          hover:bg-green-400/30 active:bg-green-400/30"
+      >
+        <span class="loader text-stone-600 hidden"></span>Encrypt
+      </button>
+      <button
+        id="decrypt"
+        class="flex items-center justify-center gap-1 w-full border border-stone-400
+          hover:bg-red-400/30 active:bg-red-400/30"
+      >
+        <span class="loader text-stone-600 hidden"></span>Decrypt
+      </button>
+      <button
+        id="copy"
+        class="w-full border border-stone-400 hover:bg-blue-400/30 active:bg-blue-400/30"
+      >
+        Copy
+      </button>
+    </div>
+  </div>
+</body>
+</html>

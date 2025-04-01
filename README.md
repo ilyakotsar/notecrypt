@@ -1,1 +1,1 @@
-# notecrypt
+# NoteCrypt

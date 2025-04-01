@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Manrope', sans-serif;
+    --font-mono: monospace;
+}
+
+html {
+    color-scheme: light;
+}
+button {
+    cursor: pointer;
+}
+button img {
+    pointer-events: none;
+}
+.loader {
+    width: 14px;
+    height: 14px;
+    border: 2px solid currentColor;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader.hidden {
+    display: none !important;
+}
