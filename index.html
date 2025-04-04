@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   >
-  <link rel="stylesheet" href="css/output-cf45832a3e.min.css">
+  <link rel="stylesheet" href="css/output-d8aa00311f.min.css">
   <script
     src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.js"
     integrity="sha384-57VRFGvLpSky5EqUImBJSOkJI+6xYMONZqn8Zh70E+1DyMPpN1vQkaJaN4YqRmln"
@@ -23,12 +23,12 @@
 </head>
 <body class="text-black bg-stone-300">
   <div class="max-w-[650px] mx-auto px-3 pb-20">
-    <div class="text-center text-lg font-extrabold mb-4">NoteCrypt</div>
+    <div class="text-center text-lg font-bold mb-4">NoteCrypt</div>
     <textarea
       id="text"
       rows="1"
-      class="py-1 border-b border-stone-400 focus:border-stone-600 w-full outline-none
-        placeholder:text-stone-500 resize-none overflow-hidden"
+      class="py-1 border-b border-stone-400 hover:border-stone-500 focus:border-stone-600
+        w-full outline-none placeholder:text-stone-500 resize-none overflow-hidden"
       placeholder="Text"
     ></textarea>
     <div class="flex mt-4 mb-4">
@@ -36,8 +36,8 @@
         <input
           type="password"
           id="password"
-          class="w-full py-1 pr-8 border-b border-stone-400 focus:border-stone-600
-            outline-none placeholder:text-stone-500"
+          class="w-full py-1 pr-8 border-b border-stone-400 hover:border-stone-500
+            focus:border-stone-600 outline-none placeholder:text-stone-500"
           placeholder="Password"
         >
         <button id="toggle-password" class="absolute right-1 bottom-1 p-1 hover:invert-50">
@@ -51,13 +51,13 @@
         max="1000000"
         value="550000"
         step="5000"
-        class="py-1 w-[85px] border-b border-stone-400 focus:border-stone-600
-          placeholder:text-stone-500 outline-none"
+        class="py-1 w-[85px] border-b border-stone-400 hover:border-stone-500
+          focus:border-stone-600 outline-none placeholder:text-stone-500"
         placeholder="Iterations"
         title="Iterations"
       >
     </div>
-    <div class="flex gap-1 h-8 font-semibold">
+    <div class="flex gap-1 h-8">
       <button
         id="encrypt"
         class="flex items-center justify-center gap-1 w-full border border-stone-400

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: 'Manrope', sans-serif;
+    --font-sans: 'Andika', sans-serif;
     --font-mono: monospace;
 }
 
@@ -24,6 +24,9 @@ button img {
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
 }
+.loader.hidden {
+    display: none !important;
+}
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
@@ -31,7 +34,4 @@ button img {
     100% {
         transform: rotate(360deg);
     }
-}
-.loader.hidden {
-    display: none !important;
 }
