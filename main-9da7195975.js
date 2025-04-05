@@ -99,9 +99,10 @@ document.getElementById('decrypt').addEventListener('click', function() {
 document.getElementById('copy').addEventListener('click', function() {
     let text = document.getElementById('text').value;
     navigator.clipboard.writeText(text).then(() => {
+        let btnText = this.innerText;
         this.innerText = 'Copied';
         setTimeout(() => {
-            this.innerText = 'Copy';
+            this.innerText = btnText;
         }, 1000);
     });
 });
